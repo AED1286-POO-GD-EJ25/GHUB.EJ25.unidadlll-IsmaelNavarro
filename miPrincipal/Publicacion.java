@@ -1,30 +1,34 @@
 package miPrincipal;
-
 import java.util.Date;
-    public class Publicacion {
-        private String editorial;
-        private Date fechaPublicacion;
 
-        public Publicacion(){
-
-        }
-
-        public Publicacion(String editorial, Date fechaPublicacion){
-            this.editorial = editorial;
-            this.fechaPublicacion = fechaPublicacion;
-        }
-
-        public String getEditorial(){
-            return editorial;
-        }
-        public void setEditorial(String editorial){
-            this.editorial = editorial;
-        }
-        public Date getFechaPublicacion(){
-            return fechaPublicacion;
-        }
-        public void setFechaPublicacion(Date fechaPublicacion){
-            this.fechaPublicacion = fechaPublicacion;
-        }
-       
-    }
+public class Publicacion{
+     //atributos
+     private String editorial;
+     private Date fecha;
+     //constructores
+     public Publicacion(){
+ 
+     }
+     public Publicacion(String editorial, Date fecha){
+         this.editorial = editorial;
+         this.fecha = fecha;
+     }
+     //getter y setter
+     public String getEditorial(){
+         return this.editorial;
+     }
+     public void setEditorial(String editorial){
+         this.editorial = editorial;
+     }
+     public Date getFecha(){
+         return this.fecha;
+     }
+     public void setFecha(Date fecha){
+         this.fecha = fecha;
+     }
+     
+     @Override
+     public String toString(){
+         return "Editorial:"+this.editorial+" Fecha:"+this.fecha;
+     }
+}
