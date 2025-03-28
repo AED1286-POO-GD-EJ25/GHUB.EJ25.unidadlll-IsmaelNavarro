@@ -1,5 +1,7 @@
 package miPrincipal;
 import java.util.Date;
+import ventana.*;
+
 public class Principal {
    
 
@@ -29,5 +31,19 @@ public class Principal {
         System.out.println();
 
         System.out.println(revista);
+
+        System.out.println();
+
+        //crear objeto Ventana
+        Ventana ventana = new Ventana();
+        //crear un objeto VentanaEspecial
+        VentanaEspecial ventanaEspecial = new VentanaEspecial();
+        //invoco a los metodos de ventanaEspecial
+        ventanaEspecial.copiar(ventanaEspecial);
+        ventanaEspecial.copiar("*****",10,5);
+        ventanaEspecial.copiar('*',100,7,8);
+
+        ventanaEspecial.copiar('x', 100, 7.5F, 8.5F);
     }
+
 }
